@@ -64,6 +64,8 @@ pnpm dev # recomended
 
 ```
 
+-----
+
 ### Start the server in production mode
 
 ```bash
