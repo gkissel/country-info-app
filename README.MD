@@ -20,3 +20,4 @@ git clone https://github.com/gkissel/country-info-app.git
 
 ### [Start the api server](back-end/README.MD#How-to-run)
 
+### [Start the frontend server](front-end/README.md#How-to-run)
