@@ -13,7 +13,7 @@ The application consists of a database (SQLite) and a Node.js REST API (Express)
     - Create an API endpoint, using Date Nager API `https://date.nager.at/api/v3/AvailableCountries`
     - This endpoint should return a list of    available      countries.
 
-- [ ] Endpoint: Get Country Info:
+- [x] Endpoint: Get Country Info:
 
     - Create an API endpoint to retrieve detailed information about a specific country.
     - This endpoint should provide the following data:
@@ -48,7 +48,18 @@ pnpm install # recomended
 
 ```
 
+
+
+
 ### Start the server in development mode
+
+Get sure that the port `3333` is open.
+
+If not, add a port number to the `PORT` environment variable.
+
+```dotenv
+PORT=3333 # Default value
+```
 
 ```bash
 
@@ -87,6 +98,12 @@ pnpm build # recomended
 pnpm start # recomended
 
 ```
+
+### Accesss the api
+
+[SWAGGER/DOCS](http://localhost:3333/api/v1/docs)
+
+[API](http://localhost:3333/api/v1)
 
 
 
