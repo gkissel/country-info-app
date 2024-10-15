@@ -8,7 +8,7 @@ The application is a React (Next.js) application that consumes the API endpoints
 
 ## Tasks 
    
-- [ ] **Country List Page**:
+- [x] **Country List Page**:
     - Display a list of countries fetched from the endpoint.
     - Each country name should be clickable and navigate the user to the Country Info Page.
 
