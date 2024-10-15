@@ -49,8 +49,6 @@ pnpm install # recomended
 ```
 
 
-
-
 ### Start the server in development mode
 
 Get sure that the port `3333` is open.
@@ -99,7 +97,7 @@ pnpm start # recomended
 
 ```
 
-### Accesss the api
+### Access the api
 
 [SWAGGER/DOCS](http://localhost:3333/api/v1/docs)
 
