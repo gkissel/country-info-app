@@ -8,7 +8,7 @@ const doc = {
   host: 'localhost:3000',
 }
 
-const outputFile = './swagger-output.json'
+const outputFile = './swagger/swagger-output.json'
 
 const routes = ['./src/http/controllers/routes.ts']
 swaggerAutogen()(outputFile, routes, doc)
