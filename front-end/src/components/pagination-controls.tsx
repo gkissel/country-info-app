@@ -35,7 +35,7 @@ const PaginationControls: FC<PaginationControlsProps> = ({
           disabled={!hasPrevPage}
           onClick={() => {
             router.push(
-              `/${actualPage}/?page=${Number(page) - 1}&per_page=${perPage}#products`,
+              `/${actualPage}/?page=${Number(page) - 1}&per_page=${perPage}`,
             )
           }}
         >
@@ -52,7 +52,7 @@ const PaginationControls: FC<PaginationControlsProps> = ({
           className="border"
           onClick={() => {
             router.push(
-              `/${actualPage}/?page=${Number(page) + 1}&per_page=${perPage}#products`,
+              `/${actualPage}/?page=${Number(page) + 1}&per_page=${perPage}`,
             )
           }}
         >

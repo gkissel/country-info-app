@@ -28,7 +28,7 @@ export default async function Home({
   const entries = countries.slice(start, end)
 
   return (
-    <div className="bg-primary py-8 xl:py-20 min-h-screen w-full text-primary-foreground px-5 xl:px-0">
+    <div className="bg-primary py-8 xl:py-10 min-h-screen w-full text-primary-foreground px-5 xl:px-0">
       <div className="w-full mx-auto max-w-7xl">
         <h1 className="text-primary-foreground text-3xl pb-10">Countries</h1>
       </div>
