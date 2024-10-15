@@ -28,9 +28,10 @@ The application consists of a database (SQLite) and a Node.js REST API (Express)
 
 
 
+----
 ## How to run
 
-----
+- Make sure that you have node.js installed in your machine (version 16+)
 
 ### Install the dependencies
 
@@ -49,13 +50,11 @@ pnpm install # recomended
 ```
 
 
-
-
 ### Start the server in development mode
 
 Get sure that the port `3333` is open.
 
-If not, add a port number to the `PORT` environment variable.
+If not, add a port number to the `PORT` environment variable (.env file).
 
 ```dotenv
 PORT=3333 # Default value
@@ -99,7 +98,7 @@ pnpm start # recomended
 
 ```
 
-### Accesss the api
+### Access the api
 
 [SWAGGER/DOCS](http://localhost:3333/api/v1/docs)
 
