@@ -31,8 +31,6 @@ export default async function Home({
     countryCode: params.countryCode,
   })
 
-  console.log(name)
-
   return (
     <div className="bg-primary py-8 xl:py-10 min-h-screen w-full text-primary-foreground px-5 xl:px-0 space-y-10">
       <div className="w-full mx-auto max-w-7xl flex-col lg:flex-row gap-4 flex lg:justify-between">
