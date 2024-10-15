@@ -18,6 +18,5 @@ This assessment requires the development of two small applications to offer coun
 git clone https://github.com/gkissel/country-info-app.git
 ```
 
-### [Start the api server](back-end/README.MD#How to run)
+### [Start the api server](back-end/README.MD#How-to-run)
 
-### [Start the front-end server](front-end/README.md#start-the-development-server)
