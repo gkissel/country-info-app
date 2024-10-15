@@ -76,32 +76,6 @@ export class GetCountryInfoController {
         await countryInfoResponse.json(),
       )
 
-      const countryPopulationResponse = await fetch(
-        `https://countriesnow.space/api/v0.1/countries/population`,
-        {
-          headers: {
-            'Content-Type': 'application/json',
-            Accept: 'application/json',
-          },
-
-          body: JSON.stringify({
-            iso3: countryCode,
-          }),
-
-          method: 'POST',
-        },
-      )
-
-      if (countryPopulationResponse.status === 404) {
-        return response
-          .status(404)
-          .json({ error: 'Country Population not found' })
-      }
-
-      const { populationCounts } = countryPopulationSchema.parse(
-        await countryPopulationResponse.json(),
-      ).data
-
       const countryFlagResponse = await fetch(
         `https://countriesnow.space/api/v0.1/countries/flag/images`,
         {
@@ -122,8 +96,34 @@ export class GetCountryInfoController {
         return response.status(404).json({ error: 'Country Flag not found' })
       }
 
-      const { flag } = countryFlagSchema.parse(
+      const { flag, iso3 } = countryFlagSchema.parse(
         await countryFlagResponse.json(),
+      ).data
+
+      const countryPopulationResponse = await fetch(
+        `https://countriesnow.space/api/v0.1/countries/population`,
+        {
+          headers: {
+            'Content-Type': 'application/json',
+            Accept: 'application/json',
+          },
+
+          body: JSON.stringify({
+            iso3,
+          }),
+
+          method: 'POST',
+        },
+      )
+
+      if (countryPopulationResponse.status === 404) {
+        return response
+          .status(404)
+          .json({ error: 'Country Population not found' })
+      }
+
+      const { populationCounts } = countryPopulationSchema.parse(
+        await countryPopulationResponse.json(),
       ).data
 
       const data = {
