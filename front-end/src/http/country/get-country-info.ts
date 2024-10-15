@@ -14,6 +14,7 @@ const getCountryInfoSchema = z.object({
   ),
   populationCounts: z.array(z.object({ year: z.number(), value: z.number() })),
   flag: z.string(),
+  name: z.string(),
 })
 
 type GetCountryInfoResponse = z.infer<typeof getCountryInfoSchema>

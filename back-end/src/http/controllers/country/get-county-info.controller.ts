@@ -96,7 +96,7 @@ export class GetCountryInfoController {
         return response.status(404).json({ error: 'Country Flag not found' })
       }
 
-      const { flag, iso3 } = countryFlagSchema.parse(
+      const { flag, iso3, name } = countryFlagSchema.parse(
         await countryFlagResponse.json(),
       ).data
 
@@ -130,6 +130,7 @@ export class GetCountryInfoController {
         borders,
         populationCounts,
         flag,
+        name,
       }
 
       return response.status(200).json(data)
