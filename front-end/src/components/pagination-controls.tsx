@@ -26,11 +26,12 @@ const PaginationControls: FC<PaginationControlsProps> = ({
   const perPage = searchParams.get('per_page') ?? '12'
 
   return (
-    <div className="flex flex-col items-center gap-2 w-full">
+    <div className="flex flex-col py-2 items-center gap-2 w-full">
       <p>You are on page</p>
       <div className="flex items-center gap-3">
         <Button
           size="icon"
+          className="border"
           disabled={!hasPrevPage}
           onClick={() => {
             router.push(
@@ -48,6 +49,7 @@ const PaginationControls: FC<PaginationControlsProps> = ({
         <Button
           size="icon"
           disabled={!hasNextPage}
+          className="border"
           onClick={() => {
             router.push(
               `/${actualPage}/?page=${Number(page) + 1}&per_page=${perPage}#products`,
