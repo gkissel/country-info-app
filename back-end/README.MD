@@ -8,7 +8,7 @@ The application consists of a database (SQLite) and a Node.js REST API (Express)
 
 ## Tasks 
    
-- [ ] Endpoint: Get Available Countries:
+- [x] Endpoint: Get Available Countries:
 
     - Create an API endpoint, using Date Nager API `https://date.nager.at/api/v3/AvailableCountries`
     - This endpoint should return a list of    available      countries.

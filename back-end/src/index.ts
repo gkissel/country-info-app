@@ -5,6 +5,7 @@ import * as swaggerUi from 'swagger-ui-express'
 import swaggerDocs from '../swagger/swagger-output.json'
 import { env } from './app/env'
 import routes from './http/controllers/routes'
+
 export const app = express()
 
 app.use(bodyParser.json())

@@ -1,14 +1,25 @@
 {
   "swagger": "2.0",
   "info": {
-    "title": "My API",
-    "description": "Description",
+    "title": "Back-End Solution",
+    "description": "This is a test assessment for Full-Stack JS engineer position. The project consists of a Backend (BE) created using Node.js (Express) and a Frontend (FE) developed with React (Next.js).",
     "version": "1.0.0"
   },
-  "host": "localhost:3000",
+  "host": "localhost:3333/api/v1",
   "basePath": "/",
   "schemes": [
     "http"
   ],
-  "paths": {}
+  "paths": {
+    "/countries/": {
+      "get": {
+        "description": "",
+        "responses": {
+          "default": {
+            "description": ""
+          }
+        }
+      }
+    }
+  }
 }
